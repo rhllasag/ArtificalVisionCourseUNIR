@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Presentation</title>
+
+    <!-- Reveal.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/moon.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Title Slide -->
+            <section class="title-slide">
+                <h1>Introduction to perception systems</h1>
+                <h3>🎓 Block: Visual and auditory perception</h3>
+                <p>
+                    <small>By PhD. Raúl Llasag Rosero</small>
+                </p>
+                <p>
+                    <small><a
+                            href="mailto:raulhomero.llasag-externo@unir.net">raulhomero.llasag-externo@unir.net</a></small>
+                </p>
+                <p>
+                    <small>GitHub: <a href="https://github.com/rhllasag">rhllasag</a></small>
+                </p>
+                <p>
+                    <small><span id="current-date"></span></small>
+                </p>
+                <div class="logo-container">
+                    <img src="unir/logo.png" alt="Company Logo" class="logo">
+                </div>
+                <p>
+                    <small>Press <span class="highlight">Space</span> or <span class="highlight">→</span> to
+                        navigate</small>
+                </p>
+
+            </section>
+            <!-- Introduction -->
+            <section>
+                <h2>📋 Agenda</h2>
+                <ul>
+                    <li class="fragment">Review of Artificial Vision</li>
+                    <li class="fragment">Main discoveries in audio</li>
+                    <li class="fragment">Current research topics</li>
+                </ul>
+            </section>
+            <!-- Review of Artificial Vision -->
+            <section>
+                <section>
+                    <h2>🎉​ Main events on Artificial Vision</h2>
+                    <h3>📷 4th century BC</h3>
+                    <p><strong>Camera Obscura - Aristotle</strong></p>
+                    <blockquote>
+                        <small>
+                            "Light passing through a small hole creates an inverted image on the opposite surface."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/camera_obscura.jpg" alt="Camera Obscura diagram"
+                            style="max-width: 80%; height: auto; border-radius: 10px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://www.photoion.co.uk/blog/camera-obscura">https://www.photoion.co.uk/blog/camera-obscura</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🧠 1957</h3>
+                    <p><strong>Perceptron - Frank Rosenblatt</strong></p>
+                    <blockquote>
+                        <small>
+                            "Type of artificial neural network that acts as a basic binary classifier, inspired by the
+                            biological function of neurons."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/perceptron.png" alt="Perceptron diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://www.photoion.co.uk/blog/camera-obscura">https://www.photoion.co.uk/blog/camera-obscura</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🔍 1960s</h3>
+                    <p><strong>Digital Image Processing - Azriel Rosenfeld</strong></p>
+                    <blockquote>
+                        <small>
+                            "Digital image processing is the use of a digital computer to process digital images through
+                            an algorithm."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/denoise.jpg" alt="denoise diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a href="https://www.sciencedirect.com/science/article/pii/S2215098618321050">Denoising
+                                images corrupted with impulse, Gaussian, or a mixture of impulse and Gaussian noise -
+                                Ali Awad</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>👁️ 1960s</h3>
+                    <p><strong>Computer Vision - Larry Roberts</strong></p>
+                    <blockquote>
+                        <small>
+                            "Computer vision is the field that deals with how computers can be made to gain high-level
+                            understanding from digital images."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/computer_vision.jpg" alt="computer vision diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://zbigatron.com/the-early-history-of-computer-vision/">https://zbigatron.com/the-early-history-of-computer-vision/</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🎯 1986</h3>
+                    <p><strong>Edge Detection - John Canny</strong></p>
+                    <blockquote>
+                        <small>
+                            "Edge detection is a fundamental image processing technique that identifies points in a
+                            digital image where brightness changes sharply. These points typically represent object
+                            boundaries, surface markings, or lighting changes, making edge detection crucial for feature
+                            extraction and object recognition in computer vision."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/edge_detection.png" alt="edge detection diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://en.wikipedia.org/wiki/Edge_detection">https://en.wikipedia.org/wiki/Edge_detection</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🤖 1989</h3>
+                    <p><strong>Convolutional Neural Networks - Yann LeCun</strong></p>
+                    <blockquote>
+                        <small>
+                            "Convolution operations are particularly well-suited for processing data that has a
+                            grid-like topology."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/cnn.jpg" alt="cnn diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://onlinelibrary.wiley.com/doi/10.1155/2021/5573031">https://onlinelibrary.wiley.com/doi/10.1155/2021/5573031</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🏆2000s</h3>
+                    <p><strong>Deep Learning Revolution - Geoffrey Hinton, Yoshua Bengio, Yann</strong></p>
+                    <blockquote>
+                        <small>
+                            "Deep Neural Networks (DNNs) are a class of machine learning algorithms that use multiple
+                            layers of nonlinear transformations to learn complex patterns in data."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/dnn.jpg" alt="dnn diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a href="https://www.mdpi.com/1999-4893/15/2/71">A Review of Deep Learning Algorithms and
+                                Their Applications in Healthcare - Hussein Abdel-Jaber and et al.</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">→</span> to finish</small></p>
+                </section>
+            </section>
+            <!-- Main discoveries in audio -->
+            <section>
+                <section>
+                    <h2>🎵 Main discoveries in audio</h2>
+                    <h3>🎶 1876</h3>
+                    <p><strong>Telephone - Alexander Graham Bell</strong></p>
+                    <blockquote>
+                        <small>
+                            "The first successful transmission of human speech over electrical wires, laying the foundation for audio communication technology."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/telephone.jpg" alt="Alexander Graham Bell's telephone"
+                            style="max-width: 80%; height: auto; border-radius: 10px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://www.history.com/topics/inventions/telephone">https://www.history.com/topics/inventions/telephone</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>📻 1877</h3>
+                    <p><strong>Phonograph - Thomas Edison</strong></p>
+                    <blockquote>
+                        <small>
+                            "The first device capable of recording and reproducing sound, revolutionizing how humans could capture and replay audio."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/phonograph.jpg" alt="Edison's phonograph"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://www.loc.gov/collections/edison-company-motion-pictures-and-sound-recordings/">Library of Congress Edison Collection</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🔊 1930s</h3>
+                    <p><strong>Digital Audio - Alec Reeves (PCM)</strong></p>
+                    <blockquote>
+                        <small>
+                            "Pulse Code Modulation (PCM) introduced the concept of converting analog audio signals into digital format, enabling precise audio reproduction and processing."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/pcm.jpg" alt="PCM diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a href="https://www.electronics-tutorials.ws/combination/pulse-code-modulation.html">Electronics Tutorials - PCM</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🎤 1950s</h3>
+                    <p><strong>Speech Recognition - Bell Labs</strong></p>
+                    <blockquote>
+                        <small>
+                            "Early speech recognition systems capable of recognizing spoken digits, marking the beginning of automatic speech recognition technology."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/speech_recognition.jpg" alt="early speech recognition system"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://ieeexplore.ieee.org/document/1457611">IEEE History of Speech Recognition</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🎵 1987</h3>
+                    <p><strong>MP3 Compression - Karlheinz Brandenburg</strong></p>
+                    <blockquote>
+                        <small>
+                            "MPEG-1 Audio Layer III revolutionized digital audio by enabling high-quality sound compression, making digital music distribution practical and widespread."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/mp3.jpg" alt="MP3 compression diagram"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://en.wikipedia.org/wiki/MP3">https://en.wikipedia.org/wiki/MP3</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🤖 2010s</h3>
+                    <p><strong>Deep Learning for Audio - Hinton, Deng, and others</strong></p>
+                    <blockquote>
+                        <small>
+                            "Deep neural networks transformed audio processing, enabling breakthrough advances in speech recognition, music generation, and audio synthesis."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/audio_deep_learning.jpg" alt="deep learning audio processing"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a
+                                href="https://arxiv.org/abs/1609.03499">Deep Learning for Audio Signal Processing</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">↓</span> to continue</small></p>
+                </section>
+                <section>
+                    <h3>🎙️ 2020s</h3>
+                    <p><strong>Transformer Models for Audio - OpenAI, Google, Meta</strong></p>
+                    <blockquote>
+                        <small>
+                            "Transformer architectures like Whisper, WaveNet, and AudioLM have achieved human-level performance in speech recognition, synthesis, and music generation."
+                        </small>
+                    </blockquote>
+                    <div class="image-container">
+                        <img src="images/audio_transformers.jpg" alt="audio transformer models"
+                            style="max-width: 100%; height: auto; border-radius: 1px;">
+                    </div>
+                    <p class="text-center">
+                        <small><a href="https://openai.com/research/whisper">OpenAI Whisper Research</a></small>
+                    </p>
+                    <p><small>Press <span class="highlight">→</span> to finish</small></p>
+                </section>
+            </section>
+
+            <!-- Conclusion -->
+            <section class="title-slide">
+                <h3>Questions?</h3>
+                <p>
+                    <small>By PhD. Raúl Llasag Rosero</small>
+                </p>
+                <p>
+                    <small><a
+                            href="mailto:raulhomero.llasag-externo@unir.net">raulhomero.llasag-externo@unir.net</a></small>
+                </p>
+                <p>
+                    <small>GitHub: <a href="https://github.com/rhllasag">rhllasag</a></small>
+                </p>
+                <p>
+                    <small><span id="current-date"></span></small>
+                </p>
+                <div class="logo-container">
+                    <img src="unir/logo.png" alt="Company Logo" class="logo">
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Reveal.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/highlight/highlight.js"></script>
+
+    <!-- External JavaScript files -->
+    <script src="scripts/date-handler.js"></script>
+    <script src="scripts/interactive.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

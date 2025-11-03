@@ -1,0 +1,428 @@
+/* Custom styles for HTML Presentation */
+
+/* General slide layout */
+.reveal .slides section {
+    text-align: left;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+    text-align: center;
+    color: #93a1a1;
+}
+
+.reveal h4 {
+    text-align: left;
+    color: #11578a;
+    font-size: 0.8em;
+}
+
+.reveal .title-slide {
+    text-align: center !important;
+}
+
+/* Reveal.js customizations */
+.reveal .progress {
+    color: #268bd2;
+}
+
+.reveal .controls {
+    color: #268bd2;
+}
+
+/* Highlight spans for keyboard shortcuts */
+.highlight {
+    background-color: #1db5d4;
+    color: #002b36;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Slide numbers */
+.slide-number {
+    font-size: 0.8em;
+    color: #586e75;
+}
+
+/* Code blocks */
+.reveal pre code {
+    background-color: #002b36;
+    color: #839496;
+    padding: 1em;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+}
+.text-center {
+    text-align: center;
+}
+/* Blockquotes */
+.reveal blockquote {
+    background-color: rgba(147, 161, 161, 0.1);
+    border-left: 4px solid #268bd2;
+    padding: 1em;
+    margin: 1em 0;
+    font-style: italic;
+    background-color: white;
+}
+/* Logo container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    max-width: 300px;
+    margin: 0 auto;
+    height: auto;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    height: auto;
+}
+
+/* Timeline component */
+.timeline {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #268bd2;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin: 0.4rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    justify-content: flex-start;
+    text-align: right;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    margin-right: 0.5rem;
+    padding-right: 0.5rem;
+    flex-direction: row-reverse;
+}
+
+.timeline-item:nth-child(even) {
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    margin-left: 1rem;
+    padding-left: 0.5rem;
+}
+
+.timeline-content {
+    background: rgba(147, 161, 161, 0.1);
+    border-radius: 1px;
+    padding: 0.5rem;
+    max-width: 45%;
+    border: 0.5px solid rgba(38, 139, 210, 0.2);
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    background: rgba(38, 139, 210, 0.1);
+    border-color: #268bd2;
+    transform: translateY(-1px);
+    box-shadow: 0 1px 1px rgba(38, 139, 210, 0.15);
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    background: #268bd2;
+    border: 1px solid white;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.timeline-date {
+    font-size: 0.9em;
+    color: #268bd2;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+    font-size: 1.1em;
+    color: #586e75;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.timeline-description {
+    color: #839496;
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item {
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
+    
+    .timeline-item .timeline-content {
+        margin-left: 1rem !important;
+        margin-right: 0 !important;
+        padding-left: 1rem !important;
+        padding-right: 1.5rem !important;
+        max-width: calc(100% - 1rem);
+    }
+    
+    .timeline-marker {
+        left: 5px;
+    }
+}
+/* Fragment animations */
+.reveal .fragment.fade-in-then-out {
+    opacity: 0;
+}
+
+.reveal .fragment.fade-in-then-out.current-fragment {
+    opacity: 1;
+}
+
+/* Interactive content area */
+.interactive-content-area {
+    background: linear-gradient(45deg, #268bd2, #859900);
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Interactive demo styles */
+.interactive-demo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.demo-column {
+    flex: 1;
+}
+
+/* Demo button */
+.demo-button {
+    padding: 1em 2em;
+    font-size: 1em;
+    background: #268bd2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.demo-button:hover {
+    background: #1e6ba8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.demo-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Color box for demo */
+#colorBox {
+    width: 100px;
+    height: 100px;
+    background: #34950b;
+    margin-top: 1em;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#colorBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Form elements */
+.demo-input {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    width: 100%;
+    border: 1px solid #475559;
+    border-radius: 3px;
+    background-color: #ffffff;
+    color: #839496;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.demo-input:focus {
+    outline: none;
+    border-color: #268bd2;
+    box-shadow: 0 0 5px rgba(38, 139, 210, 0.3);
+}
+
+.demo-range {
+    width: 100%;
+    margin: 0.5em 0;
+    accent-color: #268bd2;
+}
+
+/* Grid layout */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .interactive-demo {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .grid-layout {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .interactive-content-area {
+        height: 150px;
+        font-size: 1.2em;
+    }
+}
+
+/* Additional utility classes */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
+
+/* Update button colors to green */
+.demo-button {
+    padding: 1em 2em;
+    font-size: 1em;
+    background: #859900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.demo-button:hover {
+    background: #6c7a00;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.margin-bottom {
+    margin-bottom: 1em;
+}
+
+/* Custom animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Code highlighting improvements */
+.reveal code {
+    background-color: rgba(83, 85, 85, 0.1);
+    color: #268bd2;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
+
+/* List improvements */
+.reveal ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.reveal ul li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* Set page background to white */
+.reveal {
+    background-color: white;
+}
+
+.reveal ul li:before {
+    content: "▶";
+    color: #268bd2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Fragment improvements */
+.reveal .fragment.highlight-current-blue.visible.current-fragment {
+    color: #268bd2;
+}
+
+.reveal .fragment.highlight-current-red.visible.current-fragment {
+    color: #dc322f;
+}
+
+.reveal .fragment.highlight-current-green.visible.current-fragment {
+    color: #859900;
+}
