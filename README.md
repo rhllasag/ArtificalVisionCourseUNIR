@@ -1,4 +1,5 @@
 # Artificial Vision Course Materials
+
 ## Master's in Artificial Intelligence - Universidad Internacional de La Rioja (UNIR)
 
 **Course Code:** 14108 Q1  
